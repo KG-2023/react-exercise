@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 
 //Arrow function syntax
 const Header = ({ title}) => {
@@ -13,6 +14,10 @@ const Header = ({ title}) => {
 
 Header.defaultProps = {
   title: 'Task Tracker'
+}
+
+Header.propTypes = {
+  title: PropTypes.string
 }
 
 export default Header
