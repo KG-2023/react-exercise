@@ -27,18 +27,19 @@ const largeBlock = (
 );
 */
 
+
 const twoParagraphs = (
-  <div class="card w-25 d-flex "  >
-    <div class="card-body justify-content-between">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  
-  </div>
+  <div className="card w-25 d-flex "  >
+     <div className="card-body justify-content-between">
+      <h5 className="card-title">Card title</h5>
+      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    
+    </div>
 
     <p>I am a test 1 paragraph</p>
     <p>I am a test 2 paragraph</p>
-    <button class="btn btn-primary">Test Button</button>
-     
+    <button className="btn btn-primary">Test Button</button>
+     <input type="text" placeholder='Input text in react Example' />
   </div>
   
 );
