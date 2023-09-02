@@ -5,13 +5,16 @@ import './App.css';
 /*********************************ROOT COMPONENT*******************/
 
 function App() {
+  const name = "Rodrigo Lopez"
+  const x = true;
   return (
     <>
      <header>
       <div className="header">
           <h1>Hello World! Welcome to Our First React</h1>
+          <h2>Welcome {name} to our React Introductory Lessons</h2>
+          <h2>I love JSX {x ? 'Yes' : 'No'} in JSX!</h2>
       </div>
-        
      </header>
       <section>
         <div className="section1">
