@@ -1,8 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+
+/*********************************ROOT COMPONENT*******************/
+
 function App() {
   return (
+    <div className="App">
+     <h1>Hello World! Welcome to Our First React App</h1>
+    </div>
+
+    /*
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -18,7 +26,7 @@ function App() {
           Learn React
         </a>
       </header>
-    </div>
+    </div>*/
   );
 }
 
