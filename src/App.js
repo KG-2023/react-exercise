@@ -6,10 +6,30 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-     <h1>Hello World! Welcome to Our First React App</h1>
-    </div>
-
+    <>
+     <header>
+      <div className="header">
+          <h1>Hello World! Welcome to Our First React</h1>
+      </div>
+        
+     </header>
+      <section>
+        <div className="section1">
+          <h2>Section 1</h2>
+        </div>
+      </section>
+      <section>
+        <div className="section2">
+          <h2>Section 2</h2>
+        </div>
+      </section>
+      <section>
+        <div className="section3">
+          <h2>Section 3</h2>
+        </div>
+      </section>
+    </>
+    
     /*
     <div className="App">
       <header className="App-header">
