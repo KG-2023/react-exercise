@@ -1,20 +1,22 @@
 import PropTypes from 'prop-types';
+import Button from './Button';
 
 //Arrow function syntax
 const Header = ({ title}) => {  
   return (
-    <div>
-        <header>
+    <header>
+        <div className='header'>
             <h1 style={{textAlign:'center'}}>To-Do-App</h1>
             <h2 style={headingStyle}>{title}</h2>
-        </header>
-    </div>
+            <Button btnText = 'Add' />
+            <Button btnText = 'Delete' />
+            <Button btnText = 'Info' />
+        
+        </div>
+    </header>
   )
 }
 
-// Header.defaultProps = {
-//   title: 'Task Tracker'
-// }
 
 Header.propTypes = {
   title: PropTypes.string.isRequired
