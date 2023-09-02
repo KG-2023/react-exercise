@@ -1,8 +1,12 @@
-import React from 'react'
+// import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <div>
+        <header>
+            <h1 style={{textAlign:'center'}}>To-Do-App</h1>
+        </header>
+    </div>
   )
 }
 

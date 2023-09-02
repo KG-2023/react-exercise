@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
 
 
 /*********************************ROOT COMPONENT*******************/
@@ -10,7 +11,7 @@ function App() {
   return (
    
     <div className="container">
-      <h1>Hello World! Welcome to React!</h1>
+      <Header />
     </div>
 
    /*
