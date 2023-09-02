@@ -11,7 +11,7 @@ function App() {
   return (
    
     <div className="container">
-      <Header title={'one'} />      
+      <Header title="Productivity Tracker 1" />      
     </div>
 
    /*
