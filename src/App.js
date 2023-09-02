@@ -8,7 +8,13 @@ function App() {
   const name = "Rodrigo Lopez"
   const x = true;
   return (
-    <>
+   
+    <div className="container">
+      <h1>Hello World! Welcome to React!</h1>
+    </div>
+
+   /*
+   <>
      <header>
       <div className="header">
           <h1>Hello World! Welcome to Our First React</h1>
@@ -32,7 +38,7 @@ function App() {
         </div>
       </section>
     </>
-    
+    */
     /*
     <div className="App">
       <header className="App-header">
