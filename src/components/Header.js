@@ -1,12 +1,12 @@
 import PropTypes from 'prop-types';
 
 //Arrow function syntax
-const Header = ({ title}) => {
+const Header = ({ title}) => {  
   return (
     <div>
         <header>
             <h1 style={{textAlign:'center'}}>To-Do-App</h1>
-            <h2 style={{textAlign:'center'}}>{title}</h2>
+            <h2 style={headingStyle}>{title}</h2>
         </header>
     </div>
   )
@@ -18,6 +18,12 @@ const Header = ({ title}) => {
 
 Header.propTypes = {
   title: PropTypes.string.isRequired
+}
+
+const headingStyle = {  
+  color: 'blue',
+  textAlign: 'center',
+  backgroundColor: 'aqua',
 }
 
 export default Header
