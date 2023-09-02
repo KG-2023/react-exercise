@@ -29,20 +29,27 @@ const largeBlock = (
 
 
 const twoParagraphs = (
-  <div className="card w-25 d-flex "  >
-     <div className="card-body justify-content-between">
-      <h5 className="card-title">Card title</h5>
-      <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    
-    </div>
+  <> 
+    <header style={{height:"100vh"}} >
+      <div className="card w-25 d-flex " style={{ position: "absolute", top:"20%", left: "30%"}} >
+        <div className="card-body justify-content-between">
+          <h5 className="card-title">Card title</h5>
+          <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        
+        </div>
 
-    <p>I am a test 1 paragraph</p>
-    <p>I am a test 2 paragraph</p>
-    <button className="btn btn-primary">Test Button</button>
-     <input type="text" placeholder='Input text in react Example' />
-  </div>
+        <p>I am a test 1 paragraph</p>
+        <p>I am a test 2 paragraph</p>
+        <button className="btn btn-primary">Test Button</button>
+        <input type="text" placeholder='Input text in react Example' />
+      </div>
+    </header>
+    
+  </>
   
 );
+
+
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
