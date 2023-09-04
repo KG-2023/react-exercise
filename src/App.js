@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState } from "react";
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 
@@ -7,13 +8,32 @@ import Tasks from './components/Tasks';
 /*********************************ROOT COMPONENT*******************/
 
 function App() {
-  const name = "Rodrigo Lopez"
-  const x = true;
+  const [tasks, setTasks] = useState([
+    {
+        id: 1, 
+        text: 'Study react event handlers',
+        day: 'Sept 4, 2023',
+        reminder: true
+    },
+    {
+        id: 2, 
+        text: 'Study react states',
+        day: 'Sept 4, 2023',
+        reminder: true
+    }, 
+    {
+        id: 3, 
+        text: 'Buy grocery items',
+        day: 'Sept 4, 2023',
+        reminder: false
+    }
+]);
+
   return (
    
     <div className="container">
       <Header title="Productivity Tracker 1" />   
-      <Tasks />   
+      <Tasks tasks={tasks} />   
 
     </div>
 

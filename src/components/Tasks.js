@@ -1,33 +1,13 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import Task from './Task';
 
-const Tasks = () => {
-    const [tasks, setTasks] = useState([
-        {
-            id: 1, 
-            text: 'Study react event handlers',
-            day: 'Sept 4, 2023',
-            reminder: true
-        },
-        {
-            id: 2, 
-            text: 'Study react states',
-            day: 'Sept 4, 2023',
-            reminder: true
-        }, 
-        {
-            id: 3, 
-            text: 'Buy grocery items',
-            day: 'Sept 4, 2023',
-            reminder: false
-        }
-    ]);
-
+const Tasks = ({tasks}) => {
+    
     return (
+        //setTasks([...tasks, {}])
         <>
         {tasks.map((task)=>(
-            <h3 key={task.id}>
-            {task.text}
-             </h3>))}
+            <Task key={task.id} task={task} />))}
         </>
     )
 }
