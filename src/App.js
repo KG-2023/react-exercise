@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
+import Tasks from './components/Tasks';
 
 
 /*********************************ROOT COMPONENT*******************/
@@ -11,7 +12,9 @@ function App() {
   return (
    
     <div className="container">
-      <Header title="Productivity Tracker 1" />      
+      <Header title="Productivity Tracker 1" />   
+      <Tasks />   
+
     </div>
 
    /*

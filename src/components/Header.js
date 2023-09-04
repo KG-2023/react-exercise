@@ -3,7 +3,7 @@ import Button from './Button';
 
 //Arrow function syntax
 const Header = ({ title}) => {  
-  const onClick = ({title}) => {
+  const onClick = () => {
     console.log('Test click for the console log');
     alert('Test the onClick prop function inside of the console.');
   }
