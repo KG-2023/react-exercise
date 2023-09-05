@@ -86,6 +86,10 @@ body {
   justify-content: space-between;
 }
 
+p{
+  padding: 0 10px;
+}
+
 .add-form {
   margin-bottom: 40px;
 }
