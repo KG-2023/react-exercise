@@ -1,8 +1,15 @@
 
+import { FaTimesCircle} from 'react-icons/fa';
+
+
 const Task = ({task}) => {
   return (
     <div className="task">
-        <h3>{task.text}</h3>
+       
+        <h3>
+        <FaTimesCircle />
+          {task.text}
+        </h3>
         <p>{task.day}</p>
     </div>
   )

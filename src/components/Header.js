@@ -13,8 +13,6 @@ const Header = ({ title}) => {
             <h1 style={{textAlign:'center'}}>To-Do-App</h1>
             <h2 style={headingStyle}>{title}</h2>
             <Button text = 'Add' onClick={onClick}/>
-           
-        
         </div>
     </header>
   )
@@ -28,7 +26,7 @@ Header.propTypes = {
 const headingStyle = {  
   color: 'blue',
   textAlign: 'center',
-  backgroundColor: 'aqua'
+ 
 }
 
 export default Header

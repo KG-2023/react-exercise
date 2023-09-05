@@ -37,7 +37,7 @@ function App() {
       </div>
        
       <div className="container">
-        <Header  />   
+        <Header title='RBSL' />   
         <Tasks tasks={tasks} />   
       </div>
 
