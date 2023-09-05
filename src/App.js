@@ -3,6 +3,7 @@ import './App.css';
 import React, { useState } from "react";
 import Header from './components/Header';
 import Tasks from './components/Tasks';
+import Nav from './components/Nav';
 
 
 /*********************************ROOT COMPONENT*******************/
@@ -30,13 +31,18 @@ function App() {
 ]);
 
   return (
-   
-    <div className="container">
-      <Header title="Productivity Tracker 1" />   
-      <Tasks tasks={tasks} />   
+    <>
+      <div className="navigation">
+      <Nav />
+      </div>
+       
+      <div className="container">
+        <Header  />   
+        <Tasks tasks={tasks} />   
+      </div>
 
-    </div>
-
+    </>
+    
    /*
    <>
      <header>
