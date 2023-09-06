@@ -30,6 +30,7 @@ function App() {
     }
 ]);
 
+  // DELETE A TASK
   const deleteTask = (id) => {
     // alert('delete task test ' + id);
     // console.log('This is a delete task code test for the delete', id);
@@ -44,7 +45,7 @@ function App() {
        
       <div className="container">
         <Header title='RBSL' />   
-        <Tasks tasks={tasks} onDelete={deleteTask} />   
+        {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} /> :  'All tasks are accomplished' }
       </div>
 
     </>
