@@ -8,12 +8,14 @@ const Task = ({task, onDelete}) => {
        
         <h3>
           {task.text}
-          <FaTimesCircle style={{color: 'red', cursor: 'pointer'}} onClick={onDelete}/>
+          <FaTimesCircle style={{color: 'red', cursor: 'pointer'}} onClick={() => onDelete(task.id)} />
         </h3>
         <p>{task.day}</p>
     </div>
   )
 }
+
+
 
 /*
 import React from "react";
