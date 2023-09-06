@@ -2,9 +2,9 @@
 import { FaTimesCircle} from 'react-icons/fa';
 
 
-const Task = ({task, onDelete}) => {
+const Task = ({task, onDelete, onToggle}) => {
   return (
-    <div className="task">
+    <div className="task" onDoubleClick={()=>onToggle(task.id)}>
        
         <h3>
           {task.text}

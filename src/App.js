@@ -30,11 +30,20 @@ function App() {
     }
 ]);
 
+  // TOGGLE THE TASK
+  const toggleActive = (id)=>{
+    // console.log(id);
+    setTasks(tasks.map((task)=>task.id === id ? 
+    {...task, reminder: !task.reminder } : task
+    ))
+  }
+
   // DELETE A TASK
   const deleteTask = (id) => {
     // alert('delete task test ' + id);
     // console.log('This is a delete task code test for the delete', id);
-    setTasks(tasks.filter((task) => task.id !==id))
+    setTasks(tasks.filter((task) => task.id !==id)
+    )
   }
 
   return (
@@ -45,7 +54,7 @@ function App() {
        
       <div className="container">
         <Header title='RBSL' />   
-        {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} /> :  'All tasks are accomplished' }
+        {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
       </div>
 
     </>
