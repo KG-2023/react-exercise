@@ -52,7 +52,7 @@ function App() {
       <Nav />
       </div>
        
-      <div className="container">
+      <div className="container animate__heartBeat">
         <Header title='RBSL' />   
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
       </div>
