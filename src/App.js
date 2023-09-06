@@ -31,8 +31,9 @@ function App() {
 ]);
 
   const deleteTask = (id) => {
-    alert('delete task test ' + id);
-    console.log('This is a delete task code test for the delete', id);
+    // alert('delete task test ' + id);
+    // console.log('This is a delete task code test for the delete', id);
+    setTasks(tasks.filter((task) => task.id !==id))
   }
 
   return (
