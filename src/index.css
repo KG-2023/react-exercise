@@ -8,6 +8,7 @@
 
 body {
   font-family: 'Bebas Neue', cursive;
+  background-color: #fce5cd;
 }
 
 .navigation{
@@ -32,6 +33,7 @@ body {
   padding: 30px;
   border-radius: 5px;
   border: 2px solid purple;
+  background-color: #f7d7b5;
 }
 
 .header {

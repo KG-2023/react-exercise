@@ -6,7 +6,7 @@ const Task = ({task, onDelete, onToggle}) => {
   return (
     <div className="task" onDoubleClick={()=>onToggle(task.id)}>
        
-        <h3>
+        <h3 className="animate__animated animate__rubberBand">
           {task.text}
           <FaTimesCircle style={{color: 'red', cursor: 'pointer'}} onClick={() => onDelete(task.id)} />
         </h3>
