@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Button from './Button';
 
 //Arrow function syntax
-const Header = ({ title}) => {  
+const Header = ({ title, onAdd, showAdd}) => {  
   const onClick = () => {
     console.log('Test click for the console log');
     alert('Test the onClick prop function inside of the console.');
@@ -12,7 +12,7 @@ const Header = ({ title}) => {
         <div className='header'>
             {/* <h1 style={{textAlign:'center'}}></h1> */}
             <h2 style={headingStyle}>{title}</h2>
-            <Button text='Add' onClick={onClick}/>
+            <Button text={showAdd ? 'Close' : 'Add'} onClick={onAdd}/>
            
         </div>
     </header>
