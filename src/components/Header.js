@@ -10,11 +10,10 @@ const Header = ({ title}) => {
   return (
     <header>
         <div className='header'>
-            <h1 style={{textAlign:'center'}}>To-Do-App</h1>
+            {/* <h1 style={{textAlign:'center'}}></h1> */}
             <h2 style={headingStyle}>{title}</h2>
             <Button text = 'Add' onClick={onClick}/>
-            <Button text = 'Test2' onClick={onClick}/>
-            <Button text = 'Test' onClick={onClick}/>
+           
         </div>
     </header>
   )
