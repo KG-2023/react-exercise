@@ -12,6 +12,7 @@ import 'animate.css';
 /*********************************ROOT COMPONENT*******************/
 
 function App() {
+  const [showAddTask, setShowAddTask] = useState(true);
   const [tasks, setTasks] = useState([
     {
         id: 1, 
@@ -68,7 +69,7 @@ function App() {
        
       <div className="container animate__heartBeat">
         <Header title='TO-DO-TRACKER' />  
-        <AddTask onAdd={addTask}/> 
+        {showAddTask && <AddTask onAdd={addTask}/>}
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
       </div>
     </>
