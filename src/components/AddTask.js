@@ -19,6 +19,7 @@ const AddTask = () => {
             </label>
             <input type="text" placeholder="Add Task"/>
          </div>
+         <input type="submit" value="Save Task" />
     </form>
   )
 }

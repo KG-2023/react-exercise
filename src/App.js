@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 import Nav from './components/Nav';
+import AddTask from './components/AddTask'
 import 'animate.css';
 
 
@@ -55,7 +56,8 @@ function App() {
       </div>
        
       <div className="container animate__heartBeat">
-        <Header title='TO-DO-TRACKER' />   
+        <Header title='TO-DO-TRACKER' />  
+        <AddTask /> 
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
       </div>
     </>
