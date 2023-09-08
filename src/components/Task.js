@@ -4,8 +4,8 @@ import { FaTimesCircle} from 'react-icons/fa';
 
 const Task = ({task, onDelete, onToggle}) => {
   return (
-     <div className="task" onDoubleClick={()=>onToggle(task.id)}>
-    
+    //  <div className="task" onDoubleClick={()=>onToggle(task.id)}>
+  <div className={`task ${task.reminder} ? 'activeReminder': ''` } onDoubleClick={()=>onToggle(task.id)}>
        
         <h3 className="animate__animated animate__rubberBand">
           {task.text}
@@ -25,6 +25,7 @@ const tasksData = [
   {
     id: 1,
     text: "Study react event handlers",
+
     day: "Sept 4, 2023",
     reminder: true,
   },

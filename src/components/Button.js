@@ -8,7 +8,6 @@ const Button = ({color, text, onClick}) => {
       className='btn'>
         {text
       }</button>
-      
 }
 
 Button.defaultProps = {
