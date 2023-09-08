@@ -33,6 +33,12 @@ function App() {
     }
 ]);
 
+  // ADD TASK 
+
+  const addTask = (task) =>{
+    console.log(task);
+  }
+
   // TOGGLE THE TASK
   const toggleActive = (id)=>{
     // console.log(id);
@@ -57,7 +63,7 @@ function App() {
        
       <div className="container animate__heartBeat">
         <Header title='TO-DO-TRACKER' />  
-        <AddTask /> 
+        <AddTask onAdd={addTask}/> 
         {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
       </div>
     </>
