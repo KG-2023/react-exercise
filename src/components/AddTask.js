@@ -14,12 +14,12 @@ const AddTask = () => {
             <input type="text" placeholder="Add Task"/>
          </div>
          <div className="form-control ">
-            <label className="form-label">
+            <label className="form-label--check">
                 Set Reminder
             </label>
-            <input type="text" placeholder="Add Task"/>
+            <input type="checkbox" placeholder="Add Task"/>
          </div>
-         <input type="submit" value="Save Task" />
+         <input className="btn btn-block" type="submit" value="Save Task" />
     </form>
   )
 }

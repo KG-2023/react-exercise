@@ -12,7 +12,7 @@ const Header = ({ title}) => {
         <div className='header'>
             {/* <h1 style={{textAlign:'center'}}></h1> */}
             <h2 style={headingStyle}>{title}</h2>
-            <Button text = 'Add' onClick={onClick}/>
+            <Button text='Add' onClick={onClick}/>
            
         </div>
     </header>
