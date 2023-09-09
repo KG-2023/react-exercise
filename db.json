@@ -5,6 +5,12 @@
       "day": "day2",
       "reminder": true,
       "id": 2
+    },
+    {
+      "text": "Test React-deployment on Gh",
+      "day": "",
+      "reminder": false,
+      "id": 3
     }
   ]
 }
