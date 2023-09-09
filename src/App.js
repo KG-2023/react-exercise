@@ -5,6 +5,9 @@ import Header from './components/Header';
 import Tasks from './components/Tasks';
 import Nav from './components/Nav';
 import AddTask from './components/AddTask'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
+import Footer from './components/Footer'
+import AppVersion from './components/AppVersion'
 import 'animate.css';
 
 
@@ -87,12 +90,24 @@ const fetchTask = async (id) =>{
       <div className="navigation">
       <Nav />
       </div>
-       
-      <div className="container animate__heartBeat">
-        <Header title='TO-DO-TRACKER' onAdd={()=>setShowAddTask(!showAddTask)} showAdd={showAddTask} />  
-        {showAddTask && <AddTask onAdd={addTask}/>}
-        {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
-      </div>
+      <Router>
+        <div className="container animate__heartBeat">
+          <Header title='TO-DO-TRACKER' onAdd={()=>setShowAddTask(!showAddTask)} showAdd={showAddTask} />  
+          <Routes>
+            <Route path='/' element={
+              <>
+              {showAddTask && <AddTask onAdd={addTask}/>}
+              {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleActive}/> :  'All tasks are accomplished' }
+              </>
+            } />
+              
+            <Route path='/version'  element={<AppVersion />}/>
+          </Routes>
+          <Footer />
+          
+        </div>
+      </Router>
+      
     </>
   );
 }
