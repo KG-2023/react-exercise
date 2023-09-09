@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import Header from './components/Header';
 import Tasks from './components/Tasks';
 import Nav from './components/Nav';
@@ -14,9 +14,22 @@ import 'animate.css';
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
   const [tasks, setTasks] = useState([]);
-
-  // ADD TASK 
-
+ useEffect(()=> {
+    const getTasks = async() => {
+      const tasksFromServer = await fetchTasks()
+      setTasks(tasksFromServer)
+    }
+    getTasks()
+ }, []) 
+  
+ // FETCH TASKS
+ const fetchTasks = async () =>{
+  const res = await fetch('http://localhost:5000/tasks')
+  const data = await res.json()
+  return data
+}
+ 
+ // ADD TASK 
   const addTask = (task) =>{
     // console.log(task);
     const id = Math.floor(Math.random() * 10000 + 1);
