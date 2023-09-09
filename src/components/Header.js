@@ -12,7 +12,7 @@ const Header = ({ title, onAdd, showAdd}) => {
         <div className='header'>
             {/* <h1 style={{textAlign:'center'}}></h1> */}
             <h2 style={headingStyle}>{title}</h2>
-            <Button color={showAdd ? 'red' : 'green'} text={showAdd ? 'Close' : 'Add'} onClick={onAdd}/>
+            <Button color={showAdd ? 'red' : 'black'} text={showAdd ? 'Close' : 'Add'} onClick={onAdd}/>
            
         </div>
     </header>

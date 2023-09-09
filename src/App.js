@@ -13,26 +13,7 @@ import 'animate.css';
 
 function App() {
   const [showAddTask, setShowAddTask] = useState(false);
-  const [tasks, setTasks] = useState([
-    {
-        id: 1, 
-        text: 'Study react event handlers',
-        day: 'Sept 4, 2023',
-        reminder: true
-    },
-    {
-        id: 2, 
-        text: 'Study react states',
-        day: 'Sept 4, 2023',
-        reminder: true
-    }, 
-    {
-        id: 3, 
-        text: 'Buy grocery items',
-        day: 'Sept 4, 2023',
-        reminder: false
-    }
-]);
+  const [tasks, setTasks] = useState([]);
 
   // ADD TASK 
 
